@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+  window.onload = function () {  
+  
+  setInterval(step, 5000); 
+  setInterval(change,1000);
+  }  
+  function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+  var num = 1;  
+  function step() {  
+  if (num < 6) {  
+  num++;  
+  } else {  
+  num = 1;  
+  }  
+  var dom = document.getElementById("imgId");  
+  //更改它images的src属性  
+  dom.src = 'person/'+num + '.JPG'; 
+  }
+  x=1;
+  function change(){
+  if(x==1)
+  {
+   document.getElementById("fb").src="https://img.icons8.com/ios/50/000000/facebook.png";
+   document.getElementById('ig').src="https://img.icons8.com/cute-clipart/64/000000/instagram-new.png";
+   document.getElementById('line').src="https://img.icons8.com/dotty/80/000000/line-me.png";
+   document.getElementById('github').src="https://img.icons8.com/dusk/64/000000/github.png";
+   x=0;
+  }
+  else
+  {
+    document.getElementById("fb").src="https://img.icons8.com/color/48/000000/facebook.png";
+    document.getElementById('ig').src="https://img.icons8.com/doodle/48/000000/instagram-new.png"
+    document.getElementById('line').src="https://img.icons8.com/color/48/000000/line-me.png";
+    document.getElementById('github').src="https://img.icons8.com/wired/64/000000/github.png";
+    x=1;
+  }
+    
+}
+var bodyBgs = [];
+      bodyBgs[0] = "background/1.JPG";
+      bodyBgs[1] = "background/2.JPG";
+      bodyBgs[2] = "background/3.JPG";
+      bodyBgs[3] = "background/4.JPG";
+      bodyBgs[4] = "background/5.JPG";
+      bodyBgs[5] = "background/6.JPG";
+      bodyBgs[6] = "background/7.JPG";
+      bodyBgs[7] = "background/8.JPG";
+      bodyBgs[8] = "background/9.JPG";
+      
+      
+     
+      var randomBgIndex = Math.round( Math.random() * 8 );
+      document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ') }</style>');
+     
+    
+</script>
+<style type="text/css">
+@import url('css試作/picture move.css');
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.85;
+  border: 1px solid black;
+}
+a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: none;
+}
+a{
+  color: blue;
+  text-decoration: none;
+}
+td, th {
+  border: 1px solid #e5e482;
+  text-align: left;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+tr:nth-child(even) {
+  border: 1px solid black;
+  background-color: #f1edb4;
+}
+tr:nth-child(odd) {
+  border: 1px solid black;
+  color: white;
+  background-color: #888888;
+}
+img{
+  width:40px;
+  height:40px;
+  margin: 0 5px;
+  float: right;
+}
+</style>
+</head>
+<body  style="background-repeat: no-repeat;
+              background-attachment: fixed;  
+              background-size: cover;">
+<div id="mySidebar" class="sidebar" >
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="個人首頁.html">首頁</a>
+  <a href="#">專題</a>
+  <a href="https://udn.com/news/breaknews/1">新聞</a>
+  <a href="表單.html">聯絡我</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()" style="float: right;">☰ Open Sidebar</button>  
+</div>
+
+<table style="font-family:SimHei;font-weight: 600;">
+  <tr>
+    <th colspan="3" style="color: rgb(212, 194, 29);">
+      <p style="position: static;;font-size: large;">我 的 簡 介
+      <a href="https://www.facebook.com/ken.chiang.779" target="_blank"><img id="fb" src="https://img.icons8.com/color/48/000000/facebook.png"/></a>
+      <a href="https://www.instagram.com/?hl=zh-tw" target="_blank"><img id="ig" src="https://img.icons8.com/doodle/48/000000/instagram-new.png"/></a>
+      <a href="icon/LINE_P20200507_13350630.jpg" target="_blank"><img id="line" src="https://img.icons8.com/color/48/000000/line-me.png"></a> 
+      <a href="https://github.com/brian891005/wp108b" target="_blank"><img id="github" src="https://img.icons8.com/wired/64/000000/github.png"></a>
+      </p> 
+    </th>
+  </tr>
+  <tr>
+    <td><img id="imgId" src="person/1.JPG" style="width:256px;height:256px;"></td>
+    <td>姜玉尚</td>
+    <td>生日:<br/>
+        民國八十九年十月五日
+    </td>
+  </tr>
+  <tr>
+    <td>生平</td>
+    <td colspan="2">出生於雙薪家庭，父母忙於工作所以從小學習如何獨立生活，對於未知的事物充滿好奇心，總喜歡做一些天馬行空的想像，所以在國小時曾受邀去參加<a href="http://www.ieyiun.org/"> IEYI </a>得到國小組銀牌，對於數學也有天生的敏銳度，擅長於空間與圖形的變化，在應用邏輯上面也有大大的加分</td>
+  </tr>
+  <tr>
+    <td>學歷</td>
+    <td colspan="2"><a href="http://163.16.31.253/">文德國小</a>、<a href="http://www.qnm.ks.edu.tw/">青年國中</a>、<a href="http://www.cchs.kh.edu.tw/index.php">中正高中</a>、<a href="https://www.nqu.edu.tw/educsie/index.php?">金門大學 資工學系</a></td>
+  </tr>
+  <tr>
+    <td>興趣</td>
+    <td colspan="2">閱讀言情小說、看電影、探索新世界找尋自己不知道的知識</td>
+  </tr>
+  <tr>
+    <td>個性</td>
+    <td colspan="2">莽撞、懶散、開朗隨和、平易近人、適應力強</td>
+  </tr>
+  <tr>
+    <td>參賽經歷</td>
+    <td colspan="2">榮獲 象棋南區國小組 亞軍、IEYI 國小組 銀牌、奧林匹亞數學競賽</td>
+  </tr>
+  <tr>
+    <td>未來的展望</td>
+    <td colspan="2">到國外留學進修，環遊世界體會不同國家的文化特色</td>
+  </tr>
+</table>
+<input type ="button" onclick="history.back()" value="回上頁" style="float: right;"></input><br/>
+<div id="iconfrom">
+<p>圖片來源
+<a href="https://icons8.com">by icons8</a>
+</p>
+</div>
+
+</body>
+</html>
