@@ -1,5 +1,5 @@
 # 程式碼
-‵‵‵
+```
 class Math {
     constructor(array) {
       this.a = array
@@ -49,12 +49,12 @@ console.log(b);
 console.log(t);
 console.log('x.add(y).add(y).add(x)=', x.add(y).add(y).add(x));
 
-‵‵‵
+```
 
 # 執行結果
-‵‵‵
+```
 Math { a: [ -1, -2, -3 ] }
 Math { a: [ 0, 0, 0 ] }
 14
 x.add(y).add(y).add(x)= Math { a: [ 10, 14, 18 ] }
-‵‵‵
+```
