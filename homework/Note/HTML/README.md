@@ -21,6 +21,7 @@ HTML是掌管網頁前端最基本的語言，要看懂它並非難事，但如�
 * <p>元素定義了一個段落
 ```
 ## 範例程式碼
+* 範例一
 ```
 <!DOCTYPE html>
 <html>
@@ -32,4 +33,59 @@ HTML是掌管網頁前端最基本的語言，要看懂它並非難事，但如�
 </body>
 </html>
 ```
+* 範例二
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+</body>
+</html>
+
+```
+* 範例三
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Basic HTML Table</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+```
+# 範例頁面呈現
+
 <a href="https://brian891005.github.io/wp109b/homework/Note/HTML/html1.html">範例一</a>
+<a href="https://brian891005.github.io/wp109b/homework/Note/HTML/html2.html">範例二</a>
+<a href="https://brian891005.github.io/wp109b/homework/Note/HTML/html3.html">範例三</a>
