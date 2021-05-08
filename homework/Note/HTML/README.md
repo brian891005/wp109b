@@ -1,4 +1,4 @@
-## 主要教材
+# 主要教材
 <a href="https://www.w3schools.com/html/default.asp">W3School</a>
 
 * HTML代表超文本標記語言
@@ -10,7 +10,7 @@
 
 HTML是掌管網頁前端最基本的語言，要看懂它並非難事，但如何有效的運用在對的地方也是要考驗工程師的技術
 
-# 範例說明
+## 範例說明
 ```
 * <!DOCTYPE html>聲明定義，這個文件是一個HTML5文檔
 * <html>元件是一個HTML頁面的根元素
@@ -84,10 +84,8 @@ HTML是掌管網頁前端最基本的語言，要看懂它並非難事，但如�
 </body>
 </html>
 ```
-# 範例頁面呈現
+## 範例頁面呈現
 
 <a href="https://brian891005.github.io/wp109b/homework/Note/HTML/html1.html">範例一</a>
-
 <a href="https://brian891005.github.io/wp109b/homework/Note/HTML/html2.html">範例二</a>
-
 <a href="https://brian891005.github.io/wp109b/homework/Note/HTML/html3.html">範例三</a>
