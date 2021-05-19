@@ -70,7 +70,7 @@ h1 {
 </body>
 </html>
 ```
-### 內聯的CSS
+### 內聯CSS
 ```
 <!DOCTYPE html>
 <html>
