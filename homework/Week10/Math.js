@@ -36,7 +36,7 @@ class Math {
       }
       return sum
     }
-  }
+  } 
 var x=new Math([1,2,3]);
 var nx = x.neg()
 var b = x.add(nx)
