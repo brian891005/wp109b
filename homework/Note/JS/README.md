@@ -1,6 +1,8 @@
 # 主要教材
 <a href="https://www.w3schools.com/js/default.asp">W3School</a>
-
+<head>
+<link rel="stylesheet" href="table.css"> //以link座連接
+</head>
 # 歷史簡介
 JavaScript（通常縮寫為JS）是一種進階的、直譯的程式語言。JavaScript是一門基於原型、頭等函式的語言，是一門多範式的語言，它支援物件導向程式設計，指令式程式設計，以及函式語言程式設計。它提供語法來操控文字、陣列、日期以及正規表示式等，不支援I/O，比如網路、儲存和圖形等，但這些都可以由它的宿主環境提供支援。它已經由ECMA（歐洲電腦製造商協會）透過ECMAScript實作語言的標準化。它被世界上的絕大多數網站所使用，也被世界主流瀏覽器（Chrome、IE、Firefox、Safari、Opera）支援。
 ### 肇始於網景
@@ -24,10 +26,25 @@ JavaScript可以通過不同的方式“顯示”數據：
 * 使用寫入瀏覽器控制台console.log()
 
 ### JavaScript基本語法與c語言大致相同
-相同點:                   相異點:
-1.運算子                  1.使用var關鍵字聲明變量
-2.註解                    2.物件導向
-3.運算符                  3.變數宣告較為不嚴格
+<table>
+  <tr>
+    <th>相同點</th>
+    <th>相異點</th>
+  </tr>
+  <tr>
+    <td>運算子 </td>
+    <td>使用var關鍵字聲明變量</td>
+  </tr>
+  <tr>
+    <td>註解</td>
+    <td>物件導向</td>
+  </tr>
+  <tr>
+    <td>運算符</td>
+    <td>變數宣告較為不嚴格</td>
+  </tr>
+</table>
+
 
 <<img src="picture/運算字元.PNG" alt="picture">>
 
