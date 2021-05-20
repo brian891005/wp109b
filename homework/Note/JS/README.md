@@ -92,3 +92,51 @@ function myFunction() {
 </html>
 來源自w3school
 ```
+# JavaScript實例說明
+* 範例一(取得日期)
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript new Date()</h2>
+
+<p id="demo"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+
+</body>
+</html>
+來源自w3school
+```
+* <a href="https://brian891005.github.io/wp109b/homework/Note/JS/js1.html">範例一</a>
+
+* 範例二(改變圖片)
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+
+<p>Click the light bulb to turn on/off the light.</p>
+
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("bulbon")) {
+    image.src = "pic_bulboff.gif";
+  } else {
+    image.src = "pic_bulbon.gif";
+  }
+}
+</script>
+
+</body>
+</html>
+來源自w3school
+```
+* <a href="https://brian891005.github.io/wp109b/homework/Note/JS/js2.html">範例二</a>
