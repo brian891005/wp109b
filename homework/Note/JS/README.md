@@ -29,6 +29,8 @@ JavaScript可以通過不同的方式“顯示”數據：
 2.註解                    2.物件導向
 3.運算符                  3.變數宣告較為不嚴格
 
+<<img src="picture/運算字元.PNG" alt="picture">>
+
 # JavaScript在HTML中放的位置
 * JavaScriptfunction放置在< head >HTML頁面
 
