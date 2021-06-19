@@ -40,3 +40,9 @@ function login(flag) {
     return window.flag = 0;
     }
     }
+
+    Login.Out = function (){
+        Ui.show(Shop.html)
+        alert("您已登出");
+        return window.flag = 0;
+    }
