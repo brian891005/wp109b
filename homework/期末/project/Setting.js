@@ -17,12 +17,16 @@ Setting.html = `
 `
 
 Setting.start = function () {
-  Ui.show(Setting.html)
-  Ui.id('shopName').value = Shop.name
-  Ui.id('shopAddress').value = Shop.address
-  Ui.id('shopTel').value = Shop.tel
-  Ui.id('items').value = JSON.stringify(Shop.items, null, 2)
-  Ui.id('addons').value = JSON.stringify(Shop.addons, null, 2)
+  if (flag == 0) {
+    alert("請登入使用者");
+    }else{
+    Ui.show(Setting.html)
+    Ui.id('shopName').value = Shop.name
+    Ui.id('shopAddress').value = Shop.address
+    Ui.id('shopTel').value = Shop.tel
+    Ui.id('items').value = JSON.stringify(Shop.items, null, 2)
+    Ui.id('addons').value = JSON.stringify(Shop.addons, null, 2)
+  }
 }
 
 Setting.save = function () {

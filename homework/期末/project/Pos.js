@@ -110,7 +110,7 @@ Pos.list = function () {
 Pos.calcPrice = function () {
   let [item, itemPrice] = Ui.id('items').value.split(':')
   let [addon, addonPrice] = Ui.id('addons').value.split(':')
-  let price = parseInt(itemPrice) + parseInt(addonPrice)
+  let price = parseFloat(itemPrice) * parseFloat(addonPrice)
   Ui.id('price').value = price
   return {item, addon, price}
 }

@@ -28,9 +28,13 @@ Report.html = `
   </div>
 `
 
-Report.start = function () {
-  Ui.show(Report.html)
-  Report.showReport()
+Report.start = function (flag) {
+  if (flag == 0) {
+    alert("請登入使用者");
+    }else{
+    Ui.show(Report.html)
+    Report.showReport()
+  } 
 }
 
 Report.showReport = function () {

@@ -17,12 +17,12 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="#login">登入</a>
+        <a onclick="Ui.show(Login.html)">登入</a>
         <a href="#logout">登出</a>
         <a href="#signup">註冊</a>
       </div>
     </div>
-    <a href="#Shop" id="menuShopName">店名</a>
+    <a href="#Shop" id="menuShopName">遠洋航空</a>
   </div>
 </header>
 <aside>
@@ -31,7 +31,7 @@
     <a onclick="Ui.show(Web.html)">公司資訊</a>
     <a onclick="Ui.show(Shop.html)">訂購機票</a>
     <a href="#map">商店地圖</a>
-    <a href="#help">使用說明</a>
+    <a onclick="Ui.show(Form.html)">聯絡我們</a>
     <a href="#license">軟體授權</a>
   </div>
 </aside>
@@ -43,11 +43,14 @@
 <footer>
 </footer>
 <script src="Page.js"></script>
+<script src="Login.js"></script>
 <script src="Shop.js"></script>
 <script src="Pos.js"></script>
 <script src="Report.js"></script>
 <script src="Setting.js"></script>
 <script src="Lib.js"></script>
+<script src="Form.js"></script>
 <script src="Ui.js"></script>
+<script>window.flag = 0;</script>
 </body>
 </html>

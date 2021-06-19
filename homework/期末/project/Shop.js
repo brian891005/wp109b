@@ -2,21 +2,24 @@ const Main = {}
 
 Main.html = `
 <h1>Welcome to AirPlane's Web<h1>
+<p>Do you want to know more about our company?<p>
+<p>Join to us<p>
+<img src="圖片/Airplane.png" alt="AirPlane" width="700" height="530">
 `
 const Shop = {
-  name: '茶舖子',
-  address: '金門縣金寧鄉安美村湖南 33 號',
-  tel: '082-333333',
-  items: {'紅茶': 20, '綠茶': 20, '珍珠奶茶': 35 },
-  addons: {'去冰': 0, '半糖': 0, '熱': 0, '加鮮奶': 10 },
+  name: '遠洋航空',
+  address: '金門縣金寧鄉環島北路1段356號',
+  tel: '082-443333',
+  items: {'高雄-->金門': 1800, '台北-->金門': 1400, '台中-->金門': 1350 },
+  addons: {'大人': 1.0, '小孩': 0.5, '殘障':0.8, '軍公教': 0.7, '公民': 0.75 },
   orderCount: 0,
 }
 
 Shop.html = `
 <div>
   <button class="big" onclick="Pos.start()">新增訂單</button><br/><br/>
-  <button class="big" onclick="Report.start()">本日報表</button><br/><br/>
-  <button class="big" onclick="Setting.start()">商店設定</button><br/><br/>
+  <button class="big" onclick="Report.start(flag)">本日報表</button><br/><br/>
+  <button class="big" onclick="Setting.start(flag)">商店設定</button><br/><br/>
 </div>
 `
 
